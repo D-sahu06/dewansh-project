@@ -21,6 +21,58 @@
     font-size: 1rem;
   }
 
+   /* ✅ Responsive layout fixes */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .navbar-brand {
+      order: 1;
+      margin-right: auto;
+      margin-left: 0.5rem;
+    }
+
+    .navbar-toggler {
+      order: 3;
+      margin-right: 0.5rem;
+    }
+
+    .navbar .nav-link[href="/listings"] {
+      order: 2;
+      width: 100%;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 0.3rem;
+    }
+
+    form.d-flex {
+      order: 4;
+      width: 100%;
+      justify-content: center;
+      margin: 0.5rem 0;
+    }
+
+    .search-inp {
+      width: 70%;
+      font-size: 0.9rem;
+    }
+
+    .search-btn {
+      font-size: 0.9rem;
+      padding: 0 0.8rem;
+    }
+
+    .navbar-nav.ms-auto:last-of-type {
+      order: 5;
+      width: 100%;
+      justify-content: center;
+      flex-direction: row;
+      gap: 0.5rem;
+    }
+  }
+
 </style>
 
 <nav class="navbar navbar-expand-lg bg-body-light border-bottom sticky-top">
